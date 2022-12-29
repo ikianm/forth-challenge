@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    margin-top: -1.5rem;
+}
+
+.leftSide {
+    display: flex;
+    margin-left: 12rem;
+    margin-top: 3rem;
+    letter-spacing: -1px;
+}
+
+.leftSide h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.leftSide ul {
+    margin-top: .63rem;
+}
+
+.leftSide ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+.leftSide ul li a {
+    color: hsl(219, 9%, 45%);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.leftSide ul li a:hover::after {
+    content: "";
+    background-color: hsl(26, 100%, 55%);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 5.25rem;
+    right: 1.26rem;
+    margin: -20px;
+}
+
+.bx-cart-alt {
+    font-size: 25px;
+    color: hsl(219, 9%, 45%);
+    margin-right: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#cartBox {
+    display: none;
+    position: absolute;
+    right: 100px;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 20px 20px 30px #333, -20px 20px 30px #333;
+}
+
+#priceBox {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+
+#finalPrice {
+    font-weight: 700;
+}
+
+#cartBox h5 {
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+#empty {
+    margin-top: 120px;
+    margin-left: 120px;
+}
+
+#cartBox hr {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+}
+
+#test {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    display: none;
+}
+
+#x {
+    display: none;
+}
+
+
+.rightSide {
+    margin-right: 12rem;
+    margin-top: 3rem;
+}
+
+.bx-cart-alt span {
+    position: absolute;
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+    font-size: .8rem;
+    width: 1.2rem;
+    border-radius: 20px;
+    text-align: center;
+    bottom: 18px;
+    left: 10px;
+}
+
+.rightSide img {
+    width: 45px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.rightSide img:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+hr {
+    width: 74.8vw;
+}
+
+.row {
+    margin-top: 4rem;
+}
+
+#productView {
+    width: 25rem;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row ul {
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row ul li {
+    display: inline;
+    margin: 0 -35px;
+
+
+}
+
+.row ul li img {
+    width: 4.5rem;
+    border-radius: 10%;
+    border: 2px solid transparent;
+
+}
+
+.row ul li img:hover {
+    opacity: .5;
+    border: 2px solid hsl(26, 100%, 55%);
+
+}
+
+#companyName {
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+#productTitle {
+    font-weight: 700;
+    font-size: 3rem;
+    position: relative;
+    top: 60px;
+    left: 28px;
+}
+
+#productInfo {
+    position: relative;
+    top: 70px;
+    left: 28px;
+    font-weight: 700;
+    color: hsl(219, 9%, 45%);
+    line-height: 25px;
+}
+
+#productPrice {
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: relative;
+    top: 80px;
+    left: 28px;
+}
+
+#discount {
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-size: .8rem;
+    padding: 2px 4px;
+    border-radius: 3px;
+    position: relative;
+    top: 76px;
+    left: 30px;
+}
+
+#finalPrice {
+    margin-left: 10px;
+}
+
+#productRealPrice {
+    position: relative;
+    top: 105px;
+    right: 98px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 700;
+}
+
+#counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 150px;
+    position: relative;
+    top: 140px;
+    left: 24px;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 10px;
+}
+
+#decrementBtn,
+#incrementBtn {
+    border: none;
+    background-color: transparent;
+}
+
+#number {
+    font-weight: 700;
+}
+
+#addBtn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 95px;
+    left: 190px;
+    border: none;
+    height: 45px;
+    width: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: hsl(26, 100%, 55%);
+}
+
+#addBtn:hover {
+    background-color: hsl(26, 100%, 75%);
+}
+
+#addBtn,
+#decrementBtn,
+#incrementBtn {
+    outline: none;
+}
+
+#addBtn i,
+#addBtn span {
+    color: #fff;
+}
+
+#closeIcon {
+    display: none;
+}
+
+#sideNav,
+#menuBtn {
+    display: none;
+}
+
+
+@media screen and (max-width:1040px) {
+    .navigation ul {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #sideNav {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        display: inline-block;
+        width: 300px;
+        text-decoration: none;
+        list-style: none;
+        background-color: #fff;
+        height: 100vh;
+        display: none;
+    }
+
+    #sideNav button {
+        border: none;
+        background-color: transparent;
+    }
+
+    #sideNav li {
+        margin-top: 30px;
+    }
+
+    #sideNav li a {
+        color: black;
+        font-weight: 700;
+    }
+
+
+    #menuBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .rightSide img {
+        width: 32px;
+        margin: 0;
+        position: relative;
+        left: 90px;
+        bottom: 22px;
+        margin-right: 50px;
+
+    }
+
+    .leftSide h3 {
+        margin: 0;
+        position: relative;
+        right: 160px;
+    }
+
+    .rightSide .bx {
+        position: relative;
+        left: 50px;
+        top: 13px;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #menuBtn {
+        top: 20px;
+        right: 160px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container ul li img {
+        width: 45px;
+    }
+
+    .container ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
